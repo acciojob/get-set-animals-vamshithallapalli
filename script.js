@@ -1,10 +1,10 @@
 //complete this code
 class Animal {
-	  constructor(species){
+	  constructor(species:string){
 		  this.species = species
 	  }
 
-	  get species(){
+	  get species(): string{
 		  return this.species;
 	  }
 
@@ -14,13 +14,13 @@ class Animal {
 }
 
 class Dog extends Animal {
-	purr(){
+	purr(): void{
 		console.log("purr")
 	}
 }
 
 class Cat extends Animal {
-	bark(){
+	bark():void {
 		console.log("woof")
 	}
 }
